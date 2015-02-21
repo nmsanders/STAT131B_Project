@@ -1,3 +1,5 @@
+##This is for final submission.
+
 ##The functions below are used to make a special "matrix
 ##it stores the matrix and solves for its inverse.
 
