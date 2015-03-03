@@ -15,11 +15,7 @@ shinyUI(fluidPage(
     
     column(3, 
            sliderInput("slider1", label = h3("Sliders"),
-                       min = 0, max = 360, value = 0),
-           sliderInput("slider2", "",
-                       min = -3, max = 3, value = c(-1, 1)),
-           sliderInput("slider3", "",
-                      min = -10, max = 10, value = c(-1,1))
+                       min = 1, max = 1000, value = 500)
     ),
     
     column(3, 
@@ -37,9 +33,8 @@ shinyUI(fluidPage(
                 br(),
                 br(),
                 
-                strong("This is a gamma distribution downloaded from the web."),
-                br(),
-        img(src="http://upload.wikimedia.org/wikipedia/commons/1/1f/Inverse_gamma_pdf.png", height = 400, width = 400)
-    )
+        
+        plotOutput("MainPlot")
+        )
   )
 ))
